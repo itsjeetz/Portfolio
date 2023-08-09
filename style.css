@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    display: none;
+    background:rgb(191, 230, 191);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+ }
+ .header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+ }
+
+ .header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+
+.sidebar {
+    background-color: rgb(191, 230, 191);
+    width: 13vw;
+    height: 100vh;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 32px 0;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar nav a:hover {
+    letter-spacing: 5px;
+    color: brown;
+    transition: ease;
+}
+
+.main {
+    background-image: url('img/backg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 87%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    /* background-color: aquamarine;*/
+    height: 60vh;
+    width: 80vw;
+    margin: 55px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dev {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 60px;
+
+}
+
+.name {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 30px;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.buttons button {
+    padding: 10px;
+    border-radius: 34px;
+    background-color: wheat;
+    color: black;
+    margin: 10px;
+    font-weight: bolder;
+    border-color: yellowgreen;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contactbtn{
+    display: none;
+}
+
+.devpic img {
+    padding: 80px 40px;
+    height: 35vh;
+    border-radius: 180px;
+
+}
+
+/*------------------------------------------------------CONTACT PAGE BELOW :)--------------------------------------------------------------*/
+
+.conct {
+    background-image: url("img/backg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 87%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.conct h2 {
+    font-size: 40px;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+}
+
+.conct form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+input,
+textarea,
+label {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+input[type=submit] {
+    background-color: wheat;
+    padding: 15px 0;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-bottom: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: #fff;
+    color: darkgrey;
+}
+
+input,
+textarea {
+    color: #000000;
+    font-size: 18px;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid;
+}
+
+.icons i{
+    font-size: 35px;
+    margin: 0 15px;
+    color: rgb(30, 29, 29);
+}
+.icons i:hover{
+    color: rgb(113, 162, 210);
+}
+
+/*---------------------------------------------CV Page below --------------------------------------*/
+.cvdesc {
+    background-image: url('img/backg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 87%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cvcontainer {
+    height: 60vh;
+    width: 80vw;
+    margin: 55px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.cvbars {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    width: 40vw;
+}
+
+.cvbars p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+.cvdesc .cvcontainer h3{
+    width: 20px;
+}
+
+.bar .skill {
+    background-color: rgb(116, 194, 92);
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.bar .skill:hover {
+    background-color: rgb(252, 143, 0);
+    color: #000000;
+    transition: 0.5ns ease;
+}
+
+.c {
+    width: 92%;
+}
+
+.java {
+    width: 92%;
+}
+.cpp{
+    width: 90%;;
+}
+.python {
+    width: 65%;
+}
+
+.html {
+    width: 80%;
+}
+
+.php {
+    width: 60%;
+}
+
+/*---------------------------------------------------------Helloworld page below---------------------------*/
+.hellodiv {
+    background-image: url("img/backg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hellocontainer {
+    height: fit-content;
+    width: 80vw;
+    margin: 55px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.helloinfo {
+    font-size: 20px;
+    width: 60%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    border-style: double;
+    border-left: 2px;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-color: #000000;
+}
+
+.helloinfo h4 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.status {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    width: 40%;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.status i {
+    padding: 15px 2px;
+    margin-top: 15px;
+}
+
+.projects {
+    display: flex;
+}
+
+.projects img {
+    width: 500px;
+    margin: 30px;
+}
+
+.image1 {
+    position: relative;
+    width: 50%;
+}
+
+.image2 {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 30px;
+    right: 0;
+    height: 79%;
+    width: 39%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0707077d;
+}
+
+.image1:hover .overlay {
+    opacity: 1;
+}
+
+.image2:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------Responsive below-------------------------------------------------------------*/
+@media (max-width : 900px) {
+    * {
+        background-image: url("img/backg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .infocontainer {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+        position: absolute;
+    }
+
+    .devpic img {
+        padding: 80px 0px;
+        height: 35vh;
+        border-radius: 180px;
+    }
+    .contactbtn{
+        display:unset;
+    }
+    .projects{
+        display: block;
+    }
+}
