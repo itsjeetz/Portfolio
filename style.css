@@ -62,7 +62,7 @@
 }
 
 .main {
-    background-image: url('img/backg.jpg');
+    background-image: url('backg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
